@@ -32,6 +32,6 @@ Hack Cameras
 
 <img src="https://github.com/AngelSecurityTeam/Cam-Hackers/blob/master/camfoto2.png">
 
-<h3> Paypal donations: </h3>
+<h3> TELEGRAM: </h3>
 
-* https://www.paypal.com/paypalme/AngelSecTeam
+* https://t.me/LEOMODZ0FC
