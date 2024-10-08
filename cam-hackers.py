@@ -10,12 +10,12 @@ colorama.init()
 url = "http://www.insecam.org/en/jsoncountries/"
 
 headers = CaseInsensitiveDict()
-headers["Accept"] = "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
-headers["Cache-Control"] = "max-age=0"
-headers["Connection"] = "keep-alive"
-headers["Host"] = "www.insecam.org"
-headers["Upgrade-Insecure-Requests"] = "1"
-headers["User-Agent"] = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36"
+headers["ACEITAR"] = "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+headers["CACHE-CONTRASL"] = "max-age=0"
+headers["CONEXÃO"] = "keep-alive"
+headers["HOSPEDAR"] = "www.insecam.org"
+headers["SOLICITAÇÕES DE ATUALIZAÇÃO INSEGURAS"] = "1"
+headers["AGENTE DO USUÁRIO"] = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36"
 
 
 resp = requests.get(url, headers=headers)
@@ -30,7 +30,7 @@ print("""
 ██║     ██╔══██║██║╚██╔╝██║╚════╝██╔══██║██╔══██║██║     ██╔═██╗ ██╔══╝  ██╔══██╗╚════██║
 ╚██████╗██║  ██║██║ ╚═╝ ██║      ██║  ██║██║  ██║╚██████╗██║  ██╗███████╗██║  ██║███████║
 \033[1;31m ╚═════╝╚═╝  ╚═╝╚═╝     ╚═╝      ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚══════╝
-\033[1;31m                                                                        ANGELSECURITYTEAM \033[1;31m\033[1;37m""")
+\033[1;31m                                                                  BY  @LEO MODZ OFC CONHECIMENTO É TUDO\033[1;31m\033[1;37m""")
 
 for key, value in countries.items():
     print(f'Code : ({key}) - {value["country"]} / ({value["count"]})  ')
