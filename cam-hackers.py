@@ -3,7 +3,9 @@
 #-*- coding: utf-8 -*-
 #github.com/AngelSecurityTeam/Cam-Hackers
 
-python3 cam-hackers.py
+import requests, re , colorama ,random
+from requests.structures import CaseInsensitiveDict
+colorama.init()
 
 url = "http://www.insecam.org/en/jsoncountries/"
 
