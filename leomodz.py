@@ -11,11 +11,11 @@ url = "http://www.insecam.org/en/jsoncountries/"
 
 headers = CaseInsensitiveDict()
 headers["Accept"] = "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
-headers["CACHE-CONTROL"] = "max-age=0"
-headers["CONEXÃO"] = "keep-alive"
-headers["HOST"] = "www.insecam.org"
-headers["PEDIDOS DE ATUALIZAÇÃO INSEGUROS"] = "1"
-headers["USER-AGENT"] = "MOZILLA/5.0 (WINDOWS NT 10.0; WIN64; x64) APPLEWEBKIT/537.36 (KHTML, LIKE GECKO) CHROME/110.0.0.0 SAFARI/537.36"
+headers["Cache-Control"] = "max-age=0"
+headers["Connection"] = "keep-alive"
+headers["Host"] = "www.insecam.org"
+headers["Upgrade-Insecure-Requests"] = "1"
+headers["User-Agent"] = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36"
 
 
 resp = requests.get(url, headers=headers)
@@ -30,10 +30,10 @@ print("""
 ██║     ██╔══██║██║╚██╔╝██║╚════╝██╔══██║██╔══██║██║     ██╔═██╗ ██╔══╝  ██╔══██╗╚════██║
 ╚██████╗██║  ██║██║ ╚═╝ ██║      ██║  ██║██║  ██║╚██████╗██║  ██╗███████╗██║  ██║███████║
 \033[1;31m ╚═════╝╚═╝  ╚═╝╚═╝     ╚═╝      ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚══════╝
-\033[1;31m                                                                        LEO MODZ YTB \033[1;31m\033[1;37m""")
+\033[1;31m                                                                       CAM HACKER BY LEO MODZ OFC \033[1;31m\033[1;37m""")
 
 for key, value in countries.items():
-    print(f'CÓDIGO : ({key}) - {value["PAÍS"]} / ({value["CONTAR"]})  ')
+    print(f'Code : ({key}) - {value["country"]} / ({value["count"]})  ')
     print("")
 
 
@@ -41,7 +41,7 @@ for key, value in countries.items():
 try:
    
 
-    country = input("CÓDIGO(##) : ")
+    country = input("Code(##) : ")
     res = requests.get(
         f"http://www.insecam.org/en/bycountry/{country}", headers=headers
     )
